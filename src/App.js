@@ -1,21 +1,30 @@
+import React from "react";
 import './App.css';
+import NavBar from "./components/navBar";
+import About from "./components/about";
+import Contact from "./components/contact";
+import NewArrivals from "./components/newArrivals";
+import Products from "./components/products";
+import SplashPage from "./components/products";
+import Support from "./components/support";
+import Footer from "./components/footer";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar />
+        <Routes>
+            <Route path="/splashpage" element={<SplashPage />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/newarrivals" element={<NewArrivals />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/support" element={<Support />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
