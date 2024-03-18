@@ -1,11 +1,11 @@
 import React from 'react'
-import { Nav, Navbar} from 'react-bootstrap';
+import { Nav, Navbar, Container, NavDropdown, Form, Button} from 'react-bootstrap';
 
 const NavBar = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
     <Container fluid>
-      <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+      <Navbar.Brand href="#" className='text-dark font-weight-bold'>Sound Sync Distribution</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
@@ -14,7 +14,7 @@ const NavBar = () => {
           navbarScroll
         >
           <Nav.Link href="#action1">Home</Nav.Link>
-          <Nav.Link href="#action2">Link</Nav.Link>
+          <Nav.Link href="#action2">About</Nav.Link>
           <NavDropdown title="Link" id="navbarScrollingDropdown">
             <NavDropdown.Item href="#action3">
               Products
