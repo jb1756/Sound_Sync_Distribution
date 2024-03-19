@@ -3,18 +3,22 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Nav, Navbar, Container, NavDropdown, Form, Button } from 'react-bootstrap';
 
 function NavBar(props) {
+
+  // react hooks for navigating and locating pages.
   const navigate = useNavigate();
   const location = useLocation();
 
+  // nav button data
   const buttonData = [
     { id: "splashpage", label: "", to: "/" },
-    { id: "products", label: "Products", to: "/products" },
+    { id: "products", label: "Showroom", to: "/products" },
     { id: "newarrivals", label: "New Arrivals", to: "/newarrivals" },
     { id: "about", label: "About", to: "/about" },
     { id: "contact", label: "Contact", to: "/contact" },
     { id: "support", label: "Support", to: "/support" },
   ];
 
+  //
   const [activeButton, setActiveButton] = useState(null);
 
   useEffect(() => {
@@ -32,12 +36,12 @@ function NavBar(props) {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/" className='text-dark font-weight-bold'>Sound Sync Distribution</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className='text-dark font-weight-bold'>Sound Sync Distribution<sub>est 2024</sub></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
+            style={{ maxHeight: '1000px' }}
             navbarScroll
           >
             {buttonData.map((button) => (
