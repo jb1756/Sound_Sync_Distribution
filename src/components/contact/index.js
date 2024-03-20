@@ -1,26 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const Contact = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://form.jotform.com/jsform/240778048424158';
-    script.async = true;
-
-    // Error handling
-    const handleError = () => {
-      console.error('Failed to load JotForm script');
-    };
-
-    script.addEventListener('error', handleError);
-
-    document.body.appendChild(script);
-
-
-  }, []);
-
   return (
-    <div>
-      {/* Your JSX for the contact component */}
+    <div style={{ height: '80vh' }}>
+      <iframe
+        title="Contact Form"
+        src="https://form.jotform.com/240778048424158"
+        width="100%"
+        height="100%"
+        frameBorder="0"
+        scrolling="yes"
+        allowFullScreen
+        style={{ height: '100%', width: '100%' }}
+      ></iframe>
     </div>
   );
 };
