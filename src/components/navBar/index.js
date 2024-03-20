@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Nav, Navbar, Container, NavDropdown, Form, Button } from 'react-bootstrap';
+import "./index.css";
 
 function NavBar(props) {
 
@@ -34,9 +35,9 @@ function NavBar(props) {
   }, [location.pathname]);
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/" className='text-dark font-weight-bold'>Sound Sync Distribution<sub>est 2024</sub></Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className='goldtext font-weight-bold'>Sound Sync Distribution<sub>est 2024</sub></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -49,7 +50,7 @@ function NavBar(props) {
                 key={button.id}
                 as={Link}
                 to={button.to}
-                className={`nav-link ${activeButton === button.id ? "active" : ""}`}
+                className={`text-light nav-link ${activeButton === button.id ? "active" : ""}`}
               >
                 {button.label}
               </Nav.Link>
@@ -59,15 +60,16 @@ function NavBar(props) {
             <Form.Control
               type="search"
               placeholder="Search"
-              className="me-2"
+              className="goldtext me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-light">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
+  
 }
 
 export default NavBar;
