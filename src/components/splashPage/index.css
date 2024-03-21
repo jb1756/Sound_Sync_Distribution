@@ -1,0 +1,12 @@
+.carousel .carousel-item {
+    height: 60vh; /* Adjust this value to change the height */
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    object-fit: cover; /* This will ensure your images cover the entire area of the carousel item without stretching */
+    top: 0;
+    left: 0;
+    min-height: 300px; /* This should match the height specified above */
+  }
+  
