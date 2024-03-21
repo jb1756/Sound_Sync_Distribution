@@ -11,8 +11,8 @@ function NavBar(props) {
 
   // nav button data
   const buttonData = [
-    { id: "splashpage", label: "", to: "/" },
-    { id: "products", label: "Showroom", to: "/products" },
+    { id: "splashpage", label: "Showroom", to: "/" },
+    { id: "products", label: "Products", to: "/products" },
     { id: "newarrivals", label: "New Arrivals", to: "/newarrivals" },
     { id: "about", label: "About", to: "/about" },
     { id: "contact", label: "Contact", to: "/contact" },
@@ -41,7 +41,7 @@ function NavBar(props) {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className="border-top me-auto my-2 my-lg-0"
             style={{ maxHeight: '1000px' }}
             navbarScroll
           >
@@ -50,7 +50,7 @@ function NavBar(props) {
                 key={button.id}
                 as={Link}
                 to={button.to}
-                className={`text-light nav-link ${activeButton === button.id ? "active" : ""}`}
+                className={`text-light nav-link px-5 ${activeButton === button.id ? "active" : ""}`}
               >
                 {button.label}
               </Nav.Link>
