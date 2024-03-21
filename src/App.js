@@ -7,7 +7,7 @@ import About from "./components/about";
 import Contact from "./components/contact";
 import NewArrivals from "./components/newArrivals";
 import Products from "./components/products";
-import SplashPage from "./components/products";
+import SplashPage from "./components/splashPage";
 import Support from "./components/support";
 import Footer from "./components/footer";
 
