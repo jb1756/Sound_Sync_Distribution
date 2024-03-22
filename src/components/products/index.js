@@ -7,19 +7,19 @@ const Products = () => {
   const cardsData = [
     {
       title: "Home Audio",
-      text: "Be our partner.",
+      text: "Be our business partner.",
       buttonLabel: "Audio",
       imageUrl: img4
     },
     {
       title: "Headphones",
-      text: "Be our partner.",
+      text: "Collaborate with us.",
       buttonLabel: "Headphones",
       imageUrl: img4
     },
     {
       title: "Wireless Audio",
-      text: "Be our partner.",
+      text: "Partner with us and we'll distribute your products.",
       buttonLabel: "Wireless Audio",
       imageUrl: img4
     }
@@ -28,7 +28,7 @@ const Products = () => {
 
     return (
       <Container >
-      <Row className="justify-content-space-evenly">
+      <Row className="mt-3">
           {cardsData.map((card, index) => (
         <Card key={index} style={{ width: '18rem', margin: '20px' }}>
           <Card.Img variant="top" src={card.imageUrl} />

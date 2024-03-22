@@ -41,7 +41,7 @@ function NavBar(props) {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="border-top me-auto my-2 my-lg-0"
+            className="border-top m-auto my-2 my-lg-0"
             style={{ maxHeight: '1000px' }}
             navbarScroll
           >
