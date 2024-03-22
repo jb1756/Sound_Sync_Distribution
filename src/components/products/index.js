@@ -1,23 +1,47 @@
 import React from 'react'
-import {Button, Card, Container} from 'react-bootstrap';
+import {Button, Card, Container, Row} from 'react-bootstrap';
 import img4 from "../../assets/ssdLogo.jpg";
 
 
 const Products = () => {
+  const cardsData = [
+    {
+      title: "Home Audio",
+      text: "Be our partner.",
+      buttonLabel: "Audio",
+      imageUrl: img4
+    },
+    {
+      title: "Headphones",
+      text: "Be our partner.",
+      buttonLabel: "Headphones",
+      imageUrl: img4
+    },
+    {
+      title: "Wireless Audio",
+      text: "Be our partner.",
+      buttonLabel: "Wireless Audio",
+      imageUrl: img4
+    }
+  ];
+
+
     return (
-      <Container className="d">
-        <h1>Products</h1>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={img4} />
-        <Card.Body>
-          <Card.Title>Headphones</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
+      <Container >
+      <Row className="justify-content-space-evenly">
+          {cardsData.map((card, index) => (
+        <Card key={index} style={{ width: '18rem', margin: '20px' }}>
+          <Card.Img variant="top" src={card.imageUrl} />
+          <Card.Body>
+            <Card.Title>{card.title}</Card.Title>
+            <Card.Text>
+              {card.text}
+            </Card.Text>
+            <Button variant="primary">{card.buttonLabel}</Button>
+          </Card.Body>
+        </Card>
+          ))}
+      </Row>
       </Container>
   );
 }
