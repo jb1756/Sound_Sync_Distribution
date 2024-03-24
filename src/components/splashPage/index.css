@@ -16,7 +16,17 @@
     justify-content: center;
   }
 
-  p {
+  .carousel-container p {
     background-color: black;
     border-radius: 10px;
+    width: fit-content;
+    display: inline-flex;
+  }
+
+  .my-button {
+    width:100%;
+  }
+
+  .my-button:hover {
+    background-color: #e4a11b;
   }

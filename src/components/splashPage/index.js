@@ -1,67 +1,74 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./index.css";
-import img1 from "../../assets/Pioneer_DJ_equipment_-_angled_left_-_Expomusic_2014.jpg";
+import img1 from "../../assets/creation-6.webp";
 import img2 from "../../assets/creation.webp";
-import img3 from "../../assets/creation-3.webp";
-import img4 from "../../assets/creation-21.jpg";
+import img3 from "../../assets/creation-5.webp";
+import img4 from "../../assets/creation-22.jpg";
 import img5 from "../../assets/creation-31.jpg";
-
-
+import img6 from "../../assets/creation-7.webp";
+import img7 from "../../assets/creation-41.jpg";
 const SplashPage = () => {
   const cardsData = [
     {
+      imageUrl: img4,
       title: "Top Brands",
       text: "Experience luxury and sophistication with top brand collections.",
-      buttonLabel: "Explore",
-      imageUrl: img4,
+      buttonLabel: "Explore!",
+      to: "/products",
     },
     {
+      imageUrl: img5,
       title: "Sound Advice",
       text: "Transform your events with expert sound advice tailored just for you.",
-      buttonLabel: "Enhance",
-      imageUrl: img5,
+      buttonLabel: "Enhance!",
+      to: "/contact",
     },
     {
+      imageUrl: img6,
       title: "Special Offers",
       text: "Uncover exclusive deals and offers from renowned brands.",
-      buttonLabel: "Expose",
-      imageUrl: img4,
+      buttonLabel: "Expose!",
+      to: "/products",
     },
     {
+      imageUrl: img7,
       title: "Audio Installers",
-      text: "Experience seamless audio integration with our recommendation of expert labor services.",
-      buttonLabel: "Excelsior",
-      imageUrl: img4,
+      text: "Integrate your audio with recommended installers.",
+      buttonLabel: "Excelsior!",
+      to: "/support",
     },
   ];
 
   return (
     <div>
-      <Carousel>
+      <Carousel className="carousel-container">
         <Carousel.Item>
           <div className="carousel-item-content">
             <img className="d-block w-100" src={img1} alt="First slide" />
-            <Carousel.Caption  style={{ color: 'gold' }}>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <Carousel.Caption style={{ color: "gold" }}>
+              <p>The latest hardware for the hippest events</p>
             </Carousel.Caption>
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div className="carousel-item-content">
             <img className="d-block w-100" src={img2} alt="Second slide" />
-            <Carousel.Caption  style={{ color: 'gold' }}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Carousel.Caption style={{ color: "gold" }}>
+              <p>
+                Tech for when you need to focus and block out your surroundings
+              </p>
             </Carousel.Caption>
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div className="carousel-item-content">
             <img className="d-block w-100" src={img3} alt="Third slide" />
-            <Carousel.Caption  style={{ color: 'gold' }}>
+            <Carousel.Caption style={{ color: "gold" }}>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                Let Sound Sync Distribution help you get your home audio set up!
               </p>
             </Carousel.Caption>
           </div>
@@ -75,11 +82,26 @@ const SplashPage = () => {
               <Card className="bg-dark" style={{ height: "100%" }}>
                 <Card.Img variant="top" src={card.imageUrl} />
                 <Card.Body className="d-flex flex-column">
-                  <Card.Title style={{ color: 'gold' }}>{card.title}</Card.Title>
-                  <Card.Text className="flex-grow-1" style={{ color: 'gold' }}>{card.text}</Card.Text>
-                  <Button variant="primary" className="mt-auto">
-                    {card.buttonLabel}
-                  </Button>
+                  <Card.Title
+                    className="oleoScript"
+                    style={{ color: "#dfcc89" }}
+                  >
+                    {card.title}
+                  </Card.Title>
+                  <Card.Text
+                    className="flex-grow-1 bg-dark"
+                    style={{ color: "#dfcc89" }}
+                  >
+                    {card.text}
+                  </Card.Text>
+                  <Link to={card.to} className="my-button">
+                    <Button
+                      variant="primary"
+                      className="my-button mt-auto oleoScript goldBackground text-dark"
+                    >
+                      {card.buttonLabel}
+                    </Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
