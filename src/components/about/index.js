@@ -6,7 +6,7 @@ const About = () => {
     <Stack gap={3}>
       
         <div className="h5 text-muted bg-dark mb-4 m-5 p-4" style={{ marginBottom: '10px' }} ><div>
-        <h1 className="text-center text-primary mb-4 oleoScript">ABOUT US</h1>
+        <h1 className="text-center mb-4 oleoScript" style={{ color: "#dfcc89" }}>ABOUT US</h1>
       </div>
           <div style={{ marginBottom: '20px',  color: "#dfcc89" }}>Our mission is to amplify creativity and enrich experiences through the distribution of high-quality
         audio products. We are dedicated to delivering innovative solutions that inspire and delight our customers,
@@ -18,7 +18,7 @@ const About = () => {
 
       
       <div className="h4 text-muted bg-dark mb-4 m-5 p-4" style={{ marginBottom: '10px' }}>
-      <div className="text-center text-primary mb-4 oleoScript" style={{ marginBottom: '10px' }}>
+      <div className="text-center mb-4 oleoScript" style={{ marginBottom: '10px', color: "#dfcc89" }}>
         <h1>Vision Statment</h1>
       </div>
         <div style={{ marginBottom: '20px',  color: "#dfcc89" }}>We aim to become the premier distributor for discovering,
@@ -30,7 +30,7 @@ const About = () => {
       
 
       <div className= "h4 text-muted bg-dark mb-4 m-5 p-4" style={{ marginBottom: '20px' }}>
-        <div className="text-center text-primary mb-4 oleoScript" style={{ marginBottom: '10px' }}>
+        <div className="text-center mb-4 oleoScript" style={{ marginBottom: '10px',  color: "#dfcc89" }}>
         <h1>Goals</h1> 
         </div>
       <ul className="list-unstyled" style={{ marginBottom: '20px',  color: "#dfcc89"}}>
@@ -40,7 +40,7 @@ const About = () => {
       </div>
 
       <div className= "h4 text-muted bg-dark mb-4 m-5 p-4" style={{ marginBottom: '20px' }}>
-        <div className="text-center text-primary mb-4 oleoScript" style={{ marginBottom: '10px' }}>
+        <div className="text-center  mb-4 oleoScript" style={{ marginBottom: '10px',  color: "#dfcc89" }}>
         <h1>Services</h1> 
         </div>
       <ul className="list-unstyled" style={{ marginBottom: '20px',  color: "#dfcc89" }}>
