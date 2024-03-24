@@ -8,8 +8,6 @@ const Contact = () => {
         src="https://form.jotform.com/240778048424158"
         width="100%"
         height="100%"
-        frameBorder="0"
-        scrolling="yes"
         allowFullScreen
         style={{ height: '100%', width: '100%' }}
       ></iframe>

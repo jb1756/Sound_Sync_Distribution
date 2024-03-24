@@ -5,3 +5,15 @@
     font-family: 'Oleo Script', cursive;
     font-size:x-large;
 }
+
+.oleoScript {
+    font-family: 'Oleo Script', cursive;
+}
+
+.goldBackground {
+    background-color: #dfcc89;
+}
+
+.active {
+    color: #e4a11b !important;
+}
