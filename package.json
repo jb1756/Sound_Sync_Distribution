@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/Sound_Sync_Distribution/",
+  "homepage": "https://jb1756.github.io/Sound_Sync_Distribution",
   "start_url": ".",
   "dependencies": {
     "@babel/cli": "^7.23.9",
