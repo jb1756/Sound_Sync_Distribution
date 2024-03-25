@@ -2,8 +2,12 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "homepage": "https://jb1756.github.io/Sound_Sync_Distribution/",
   "start_url": "."
+=======
+  "homepage": "https://jb1756.github.io/Sound_Sync_Distribution",
+>>>>>>> 7e465cdaf1d9d0b64b5f8da8e0ecb268f77c81b3
   "dependencies": {
     "@babel/cli": "^7.23.9",
     "@babel/core": "^7.24.0",
@@ -57,5 +61,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
