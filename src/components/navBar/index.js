@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Nav, Navbar, Container, NavDropdown, Form, Button } from 'react-bootstrap';
+import { Nav, Navbar, Container, Form, Button } from 'react-bootstrap';
 import "./index.css";
 
-function NavBar(props) {
+function NavBar(_props) {
 
   // react hooks for navigating and locating pages.
   const navigate = useNavigate();
