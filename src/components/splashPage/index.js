@@ -48,29 +48,33 @@ const SplashPage = () => {
         <Carousel.Item>
           <div className="carousel-item-content">
             <img className="d-block w-100" src={img1} alt="First slide" />
-            <Carousel.Caption style={{ color: "gold" }}>
+           {/*} <Carousel.Caption style={{ color: "white" }}>
               <p>The latest hardware for the hippest events</p>
-            </Carousel.Caption>
+  </Carousel.Caption> */}
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div className="carousel-item-content">
             <img className="d-block w-100" src={img2} alt="Second slide" />
-            <Carousel.Caption style={{ color: "gold" }}>
+            {/* 
+            <Carousel.Caption style={{ color: "white" }}>
               <p>
                 Tech for when you need to focus and block out your surroundings
               </p>
-            </Carousel.Caption>
+            </Carousel.Caption>            
+            */}
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div className="carousel-item-content">
             <img className="d-block w-100" src={img3} alt="Third slide" />
+            {/* 
             <Carousel.Caption style={{ color: "gold" }}>
               <p>
                 Let Sound Sync Distribution help you get your home audio set up!
               </p>
             </Carousel.Caption>
+            */}
           </div>
         </Carousel.Item>
       </Carousel>
