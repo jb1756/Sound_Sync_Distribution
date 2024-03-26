@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Sound_Sync_Distribution/static/css/main.75c5a53e.css",
+    "main.js": "/Sound_Sync_Distribution/static/js/main.0f44fa37.js",
+    "static/js/453.ed3810f9.chunk.js": "/Sound_Sync_Distribution/static/js/453.ed3810f9.chunk.js",
+    "static/media/creation.webp": "/Sound_Sync_Distribution/static/media/creation.ed97a598d04a48d1d94a.webp",
+    "static/media/creation-5.webp": "/Sound_Sync_Distribution/static/media/creation-5.4bd79399689b1e6f87ea.webp",
+    "static/media/creation-41.jpg": "/Sound_Sync_Distribution/static/media/creation-41.aa1fe8f446f10023ab72.jpg",
+    "static/media/creation-31.jpg": "/Sound_Sync_Distribution/static/media/creation-31.55d265fcf0539c458032.jpg",
+    "static/media/creation-7.webp": "/Sound_Sync_Distribution/static/media/creation-7.eadacffd57a673d9ecd5.webp",
+    "static/media/creation-6.webp": "/Sound_Sync_Distribution/static/media/creation-6.7343aeecff64871d8a67.webp",
+    "static/media/ssdLogo.jpg": "/Sound_Sync_Distribution/static/media/ssdLogo.b105a98879671cdc04a9.jpg",
+    "static/media/creation-22.jpg": "/Sound_Sync_Distribution/static/media/creation-22.1b66dd00835656d15947.jpg",
+    "index.html": "/Sound_Sync_Distribution/index.html",
+    "main.75c5a53e.css.map": "/Sound_Sync_Distribution/static/css/main.75c5a53e.css.map",
+    "main.0f44fa37.js.map": "/Sound_Sync_Distribution/static/js/main.0f44fa37.js.map",
+    "453.ed3810f9.chunk.js.map": "/Sound_Sync_Distribution/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75c5a53e.css",
+    "static/js/main.0f44fa37.js"
+  ]
+}
