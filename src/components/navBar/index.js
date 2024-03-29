@@ -50,21 +50,12 @@ function NavBar(props) {
                 key={button.id}
                 as={Link}
                 to={button.to}
-                className={`text-light nav-link px-5 ${activeButton === button.id ? "active" : ""}`}
+                className={`bronzenavtext nav-link px-5 ${activeButton === button.id ? "active" : ""}`}
               >
                 {button.label}
               </Nav.Link>
             ))}
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="goldtext me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-light">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>

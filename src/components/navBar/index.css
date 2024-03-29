@@ -6,6 +6,11 @@
     font-size:x-large;
 }
 
+.bronzenavtext {
+    color: #dfcc89;
+    font-family: "Mulish", sans-serif;
+}
+
 .oleoScript {
     font-family: 'Oleo Script', cursive;
 }

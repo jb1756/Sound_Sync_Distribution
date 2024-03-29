@@ -16,7 +16,7 @@ const About = () => {
           <h1>Services</h1>
         </div>
         <ul
-          className="list-unstyled"
+          className="list-unstyled bronzenavtext"
           style={{ marginBottom: "20px", color: "#dfcc89" }}
         >
           <li>Sales. Marketing. Fulfillment.</li>
@@ -42,7 +42,7 @@ const About = () => {
             ABOUT US
           </h1>
         </div>
-        <div style={{ marginBottom: "20px", color: "#dfcc89" }}>
+        <div className ="bronzenavtext" style={{ marginBottom: "20px", color: "#dfcc89" }}>
           Our mission is to amplify creativity and enrich experiences through
           the distribution of high-quality audio products. We are dedicated to
           delivering innovative solutions that inspire and delight our
